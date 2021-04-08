@@ -6,7 +6,7 @@ export default function UseEffectComponent() {
   useEffect(() => {
     const timer = window.setInterval(() => {
       setVal((v) => v + 1)
-    }, 1000)
+    }, 100000)
 
     return () => window.clearInterval(timer)
   }, [])
